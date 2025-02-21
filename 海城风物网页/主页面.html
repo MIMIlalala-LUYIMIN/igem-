@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>海城风物</title>
+    <link rel="stylesheet" href="./css/主页面.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> <!-- 引入 Font Awesome 图标库 -->
+    <script src="./js/二级页面.js"></script>
+    <!-- 引入 MathJax 库 -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.bootcss.com/mathjax/3.0.5/es5/tex-mml-chtml.js"></script>
+    <style>
+        @keyframes reveal-letters {
+            0% {
+                width: 0;
+            }
+            100% {
+                width: 100%;
+            }
+        }
+
+        .animated-title {
+            display: inline-block;
+            overflow: hidden;
+            white-space: nowrap;
+            animation: reveal-letters 3s steps(6, end) infinite;
+        }
+        th
+        {
+            width: 150px;
+            height: 157.5px;
+            text-align: center; 
+        }
+        td
+        {
+            width: auto;
+            height: 157.5px;
+            text-align: center;
+        }
+    </style>
+</head>
+</head>
+<body>
+    <div class="all">
+        <div class="head">
+            <span id="logo-part" style="width: 80px;">
+                <img src="./imgs/扇贝工作室定稿-03.jpg" alt="扇贝工作室" style="width: 80px ;display: inline-block;">
+            </span>
+
+            <span id="name" style="width: 140px ;height: 84px;;background-color:white;float: left;margin-top: 20px;">
+                <h2 class="animated-title" style="display: inline-block;float: right; margin-right: 20px; color:#e29e9e;">扇贝工作室</h2>
+            </span>
+
+            <div id="search">
+                <i class="fa fa-search"></i>
+                <input type="text" placeholder="搜索">
+            </div>
+        </div>
+
+        <div class="detail">
+            <div class="nave">
+                <div id="club" onclick="showRoleIntro('club-intro')">
+                    <p>工作室</p>
+                    <div class="line"></div>
+                </div>
+
+                <div id="story" onclick="showRoleIntro('story-intro')">
+                    <p>剧情介绍</p>
+                    <div class="line"></div>
+                </div>
+                    
+                <div id="role" onclick="showRoleIntro('role-intro')">
+                    <p>角色介绍</p>
+                    <div class="line"></div>
+                </div>
+
+                <div id="music" onclick="showRoleIntro('music-intro')">
+                    <p>音乐</p>
+                    <div class="line"></div>
+                </div>
+                <div id="background" onclick="showRoleIntro('background-intro')">
+                    <p>故事背景</p>
+                    
+                </div>
+            </div>
+
+            <div id="club-intro" class="intro">
+                <embed src="./pdf/工作室介绍演示文档.pdf"   width="100%" height="600px" style="border: none;">>
+            </div>
+            <div id="story-intro" class="intro">
+                <table border="1" >
+                    
+                        <tr>
+                            <th>章节 1</th>
+                            <td>这里填写章节 1 的内容，例如著名的勾股定理 \(a^2 + b^2 = c^2\)。</td>
+                            
+                        </tr>
+                    
+                
+                        <tr>
+                            <th>章节 2</th>
+                            <td>这里填写章节 2 的内容，比如牛顿第二定律 \(F = ma\)。</td>
+                        </tr>
+
+                        <tr>
+                            <th>章节 3</th>
+                            <td>这里填写章节 3 的内容，像圆的面积公式 \(S = \pi r^2\)。</td>
+                        </tr>
+
+                        <tr>
+                            <th>章节 4</th>
+                            <td>这里填写章节 4 的内容，例如欧拉公式 \[e^{i\pi} + 1 = 0\]。</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            
+            <div id="role-intro" class="intro">
+
+                <div class="role-nave">
+                    <div id="title-all"  onclick="click1(this)">
+                        <p style=" line-height: 50px;margin: 0%;">全成员</p>
+                    </div>
+
+                    <div id="title-qiumo" onclick="click1(this)">
+                        <div class="line2"></div>
+                        <p>邱漠</p>
+                    </div>
+                    <div id="title-huting" onclick="click1(this)">
+                        <div class="line2"></div>
+                        <p>胡亭</p>
+                    </div>
+                    
+                    <div id="title-xiawei" onclick="click1(this)">
+                        <div class="line2"></div>
+                        <p>夏唯</p>
+                    </div>
+                    <div id="title-sutan" onclick="click1(this)">
+                        <div class="line2"></div>
+                        <p>苏檀</p>
+                    </div>
+                    <div id="title-yemin" onclick="click1(this)">
+                        <div class="line2"></div>
+                        <p>叶茗</p>
+                    </div>
+                    <div id="tip" >
+                        <br>
+                        <br>
+                        <p>tip：点击角色名称可定位立绘和简介哦——（文字介绍还未填充）</p>
+                        <p>（由于游戏还在筹备中——图片暂时虚化处理，仅作布局参考~）</p>
+                    </div>
+                </div>
+
+                <div class="role-detail">
+                    <div class="role-img-all" id="intro-all">
+                        <img src="./imgs/CG_全家福_细化稿-1.png" alt="" style="width: 100%; height:auto ;">
+                    </div>
+                    
+                    <div class="role-img" id="intro-qiumo">
+                        <img src="./imgs/邱漠.png" alt="">
+                        
+                    </div>
+                    <div class="role-img" id="intro-huting">
+                        <img src="./imgs/胡亭_草稿.png" alt="">
+                    </div>
+                    <div class="role-img" id="intro-xiawei" >
+                        <img src="./imgs/夏唯_草稿.png" alt="">
+                    </div>
+                    <div class="role-img" id="intro-sutan">
+                        <img src="./imgs/苏檀_细化稿（礼服）.png" alt="">
+                    </div>
+                    <div class="role-img" id="intro-yemin" style="margin: 0;">
+                        <img src="./imgs/叶茗_细化稿.png" alt="">
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div id="music-intro" class="intro">
+                <p>这里是音乐介绍，请点击其他看看吧————</p>
+            </div>
+            <div id="background-intro" class="intro">
+                <p>这里是故事背景，请点击其他看看吧————</p>
+            </div>
+        </div>
+        <div class="buttom"><p>&copy; 2025 扇贝工作室。保留所有权利。</p></div>
+    </div>
+    
+</body>
+</html>
